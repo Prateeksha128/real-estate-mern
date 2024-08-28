@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+
+  a{
+    transition: all 0.3s ease;
+
+    &:hover{
+        scale: 1.08;
+    }
+  }
+
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .logo {
+      display: flex;
+      font-weight: bold;
+      font-size: 20px;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 28px;
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    background: #fcf5f3;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+
+    .signup{
+        background-color: #fece51;
+    }
+
+    a{
+        padding: 12px 24px;
+        margin: 20px;
+    }
+  }
+}
