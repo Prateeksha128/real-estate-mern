@@ -5,7 +5,9 @@ function Homepage() {
     <div className='homepage'>
       <div className='textContainer'>
         <div className='wrapper'>
-          <h1 className='title'>Find Real Estate & Get Your Dream Place</h1>
+          <h1 className='title'>
+            Explore Properties & Find Your Happy Place
+          </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
             dolorum, rem harum ipsum dolorem ducimus, ipsam, et corporis vitae
@@ -24,7 +26,7 @@ function Homepage() {
             </div>
             <div className='box'>
               <h1>1200+</h1>
-              <h2>Poperty Ready</h2>
+              <h2>Property Ready</h2>
             </div>
           </div>
         </div>
