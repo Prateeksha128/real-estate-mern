@@ -1,13 +1,11 @@
-import SearchBar from "../components/searchBar/SearchBar";
+import SearchBar from "../../components/searchBar/SearchBar";
 import "./Homepage.scss";
 function Homepage() {
   return (
     <div className='homepage'>
       <div className='textContainer'>
         <div className='wrapper'>
-          <h1 className='title'>
-            Explore Properties & Find Your Happy Place
-          </h1>
+          <h1 className='title'>Explore Properties & Find Your Happy Place</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
             dolorum, rem harum ipsum dolorem ducimus, ipsam, et corporis vitae

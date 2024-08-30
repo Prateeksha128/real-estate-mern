@@ -1,8 +1,11 @@
-@import "./../responsive.scss";
+@import "../../responsive.scss";
 .homepage {
   display: flex;
   height: 100%;
   padding-bottom: 2%;
+  @include sm{
+    overflow-y: auto;
+  }
   .textContainer {
     flex: 3;
     .wrapper {
