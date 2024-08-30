@@ -1,14 +1,19 @@
+@import "../../responsive.scss";
 nav {
   display: flex;
   justify-content: space-between;
   height: 100px;
   align-items: center;
 
-  a{
-    transition: all 0.3s ease;
+  a {
+    transition: all 0.4s ease;
 
-    &:hover{
-        scale: 1.08;
+    &:hover {
+      scale: 1.08;
+    }
+
+    @include sm {
+      display: none;
     }
   }
 
@@ -26,24 +31,73 @@ nav {
       img {
         width: 28px;
       }
+      span {
+        @include md {
+          display: none;
+        }
+        @include sm {
+          display: initial;
+        }
+      }
     }
   }
   .right {
     flex: 2;
     background: #fcf5f3;
     display: flex;
-    gap: 50px;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
 
-    .signup{
-        background-color: #fece51;
+    @include md {
+      background-color: transparent;
     }
 
-    a{
-        padding: 12px 24px;
-        margin: 20px;
+    .signup {
+      background-color: #fece51;
+    }
+
+    a {
+      padding: 12px 24px;
+      margin: 20px;
+    }
+
+    .menuIcon {
+      display: none;
+      z-index: 999;
+      @include sm {
+        display: initial;
+      }
+      img {
+        height: 36px;
+        width: 36px;
+        cursor: pointer;
+      }
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      transition: all 1s ease;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+
+      @include sm {
+        &.active {
+          right: 0;
+        }
+        a {
+          display: initial;
+        }
+      }
     }
   }
 }
