@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -11,6 +12,7 @@ function Navbar() {
         </a>
         <a href='/'>Home</a>
         <a href='/'>About</a>
+        {/* <Link to="/list">About</Link> */}
         <a href='/'>Contact</a>
         <a href='/'>Agents</a>
       </div>
