@@ -8,6 +8,10 @@
     flex: 2;
     height: 200px;
 
+    @include sm {
+      display: none;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -78,17 +82,17 @@
         display: flex;
         gap: 20px;
 
-        .icon{
-            display: flex;
-            padding: 2px 5px;
-            border: 1px solid #999;
-            border-radius: 5px;
-            cursor: pointer;
-            align-items: center;
+        .icon {
+          display: flex;
+          padding: 2px 5px;
+          border: 1px solid #999;
+          border-radius: 5px;
+          cursor: pointer;
+          align-items: center;
 
-            &:hover{
-                background-color: lightgray;
-            }
+          &:hover {
+            background-color: lightgray;
+          }
         }
       }
     }
